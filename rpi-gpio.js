@@ -389,6 +389,8 @@ function Gpio() {
             poller.remove(fd).close();
         }
     };
+    
+    this.unexportPin = unexportPin;
 }
 util.inherits(Gpio, EventEmitter);
 
